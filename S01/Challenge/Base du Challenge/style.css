@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+}
+
+body {
+  min-height: 100dvh;
+  background-image: url(assets/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+#popupNote {
+  width: 400px;
+
+  border: #e0e0e0 solid 1px;
+  border-radius: 8px;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+  padding: 20px;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#btn__reset {
+  padding: 15px;
+}
+#resetButton {
+  position: fixed;
+  top: 20px;
+  right: 22px;
+
+  font-size: 1.5rem;
+  opacity: 0.5;
+
+  border: none;
+  background: inherit;
+  cursor: pointer;
+
+  padding: 5px;
+
+  transition: 0.2s ease-in-out;
+}
+#resetButton:hover {
+  transform: scale(1.5);
+}
+
+.starsContainer {
+  padding: 15px;
+  overflow: visible;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#star {
+  font-size: 2rem;
+  color: #ffd43b;
+
+  background: inherit;
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out;
+}
+#star:hover {
+  transform: scale(1.5);
+  margin: 0 7px;
+}
+.fa-regular {
+  opacity: 0.5;
+}
+
+#userEmailInput__container,
+#userCommentArea__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#userEmailInput {
+  width: 250px;
+}
+#userCommentArea {
+  width: 250px;
+  height: 125px;
+}
+#userEmailInput,
+#userCommentArea {
+  border: #0a0e22 solid 1px;
+  border-radius: 5px;
+}
+#starsMessageError,
+#mailMessageError {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#validButton {
+  padding: 5px 15px;
+
+  background-color: #253fc1;
+  color: #fff;
+
+  border: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/568b3a7351.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Semaine 1</title>
+  </head>
+
+  <body>
+    <div id="popupNote">
+      <div>
+        <div id="btn__reset">
+          <button id="resetButton">
+            <i class="fa-solid fa-rotate"></i>
+          </button>
+        </div>
+
+        <h2>How many stars would you give to them?</h2>
+        <p>
+          Jonah Noah delivered your order from
+          <strong>Nanica Homemade Pies</strong>, today at 19:47.
+        </p>
+
+        <form action="" method="get" id="ratingForm">
+          <div class="starsContainer">
+            <i id="star" class="fa-regular fa-star" data-value="1"></i>
+            <i id="star" class="fa-regular fa-star" data-value="2"></i>
+            <i id="star" class="fa-regular fa-star" data-value="3"></i>
+            <i id="star" class="fa-regular fa-star" data-value="4"></i>
+            <i id="star" class="fa-regular fa-star" data-value="5"></i>
+          </div>
+          <span id="starsMessageError"></span>
+          <input type="hidden" name="note" id="note" value="" />
+
+          <div id="userEmailInput__container">
+            <label for="userEmail">Mail</label>
+            <input type="email" name="userEmail" id="userEmailInput" />
+            <span id="mailMessageError"></span>
+          </div>
+
+          <div id="userCommentArea__container">
+            <label for="Commentaire">Commentaire</label>
+            <textarea
+              name="userComment"
+              id="userCommentArea"
+              maxlength="250"
+            ></textarea>
+          </div>
+          <button type="submit" id="validButton">VALIDER</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
